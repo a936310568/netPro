@@ -6,33 +6,18 @@
           <img class="img" src="../../assets/231646541950_.pic.jpg" alt="">
         </div>
       </el-col>
-      <el-col class="navItemBox" :span="10">
+      <el-col class="navItemBox" :span="12">
         <template v-for ="(item, i) in menuList">
           <div 
             v-bind:class="['navItem', currIndex === i ? 'bottomLine' : '']"
-            
+            @click="routerPush(item.routerPath)" 
             @mouseover="checkItem(i)"
+            @mouseleave="clearSelect()"
             v-if="!item.hasChild" :key="item.id"
           >{{item.menuName}}</div>
-          <div 
-            v-bind:class="['navItem', 'contact' ,  currIndex === index ? 'bottomLine' : '']"
-            v-else
-           
-            @mouseover="showChild(item.menuName,index)"
-            :key="item.id"
-          >
-            {{item.menuName}}
-            <div class="child" v-if="item.showChild" @mouseleave="unshowChild(item.menuName)">
-              <template v-for ="(child, index) in item.childList">
-                <div class="childItem" @click="handleClickChild(child.name)" :key="index">{{child.name}}</div>
-              </template>
-            </div>
-          </div>
         </template>
       </el-col>
-      <!-- @click="routerPush(item.routerPath)"  -->
-      <!--  @click="routerPush(item.menuName)" -->
-      <el-col :span="8">
+      <el-col :span="6">
         <div class="iconlist">
           <a href="https://www.linkedin.com/company/ningbo-sunwalker-new-energy-technologies-co-ltd/"><img class="icon" src="../../assets/领英 小图标.jpg" alt="" :key="index"></a>
           <a href="https://www.facebook.com/SunwalkerNewEnergy/"><img class="icon2" src="../../assets/facebook 小图标.jpg" alt="" :key="index"></a>
@@ -88,6 +73,9 @@ export default {
         }
       })
     },
+    clearSelect() {
+      this.currIndex = null
+    },
     unshowChild(menuName) {
       this.menuList.forEach((item) => {
         if(item.menuName === menuName) {
@@ -125,6 +113,7 @@ export default {
     display: flex;
     align-items: center;
     position: fixed;
+    z-index: 9999;
   }
   .wrap {
     width: 100%;
@@ -135,18 +124,19 @@ export default {
   .navItemBox {
     display: flex;
     align-items: center;
-    
+    height: 40px;
   }
   .navItem {
     color: #008bd2;
-    margin-right: 20px;
+    margin-right: 50px;
     font-size: 20px;
     font-weight: 600;
     text-decoration:rgba(1, 1, 1, 0);
     cursor: pointer;
   }
   .bottomLine {
-    border-bottom: 1px solid #fff;
+    /* border-bottom: 1px solid #fff; */
+    color: black;
   }
   .imgBox {
     width: 160px;

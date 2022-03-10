@@ -1,12 +1,11 @@
 <template>
-  <el-carousel 
-    id="swiperBox" 
-    arrow="always" 
-    :interval="4000"
-    :autoplay='true' 
-    :height="'575px'"
-  >
-    <el-carousel-item class="swiperItem" v-for ="(item) in picList" :key="item.id">
+    <el-carousel
+      id="swiperBox"
+      :autoplay='true' 
+      :interval='5000'
+      height="65vh"
+    >
+    <el-carousel-item v-for ="(item) in picList" :key="item.id">
       <img class="img" :src="item.url">
     </el-carousel-item>
   </el-carousel>
@@ -54,7 +53,9 @@ export default {
 <style scoped>
   #swiperBox {
     width: 100%;
-    z-index: -1;
+  }
+  .el-carousel__container{
+    height: auto!important;
   }
   .swiperItem {
     width: 100%;
@@ -62,6 +63,7 @@ export default {
   }
   .img {
     width: 100%;
+    height: 100%;
   }
   .text {
     position: absolute;

@@ -5,7 +5,7 @@
       <router-link to="/about">About</router-link> -->
     <!-- </div> -->
     <HeadMenu />
-    <router-view/>
+    <router-view id="view"/>
   </div>
 </template>
 <script>
@@ -41,5 +41,9 @@ body {
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+#view {
+  padding-top: 76px;
 }
 </style>
