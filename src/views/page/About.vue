@@ -133,7 +133,7 @@ export default {
       return `<div style="margin:20px 0px 10px 30px;font-weight:600;font-size:22px;"> ${Number(value).toFixed(0)}</div>`;
     },
     toLocaleString(value) {
-      return `<div style="margin:20px 0px 10px 30px;font-weight:600;font-size:22px;"> ${Number(value).toLocaleString()}</div>`;
+      return `<div style="margin:20px 0px 10px 30px;font-weight:600;font-size:22px;"> ${Number(value).toLocaleString()} + </div>`;
     }
   }
 }
