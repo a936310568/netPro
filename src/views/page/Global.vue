@@ -97,7 +97,7 @@
           </div>
         </div>
       </div>
-      <div class="content-qustion">
+      <div class="content-qustion ml20">
         <p class="title">
           Sofar Overview:
         </p>
@@ -142,6 +142,8 @@ export default {
   }
   .content-qustion {
     margin-top: 30px;
+  }
+  .ml20 {
     margin-left: 20px;
   }
   .qustion-text {
@@ -167,10 +169,11 @@ export default {
     font-weight: 500;
     font-size: 18px;
     color: #000;
+    margin-top: 10px;
   }
   .pic {
-    width: 180px;
-    height: 100%;
+    width: 200px;
+    height: auto;
     margin-right: 30px;
   }
   .productBox {

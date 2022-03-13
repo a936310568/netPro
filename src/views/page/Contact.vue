@@ -162,41 +162,17 @@
     <div id="network" class="netWork">
       <div class="network-header">
         <p class="header-title">Global NetWork</p>
-        <div class="header-img">
-          <img class="addressImg" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.hqhdwalls.com%2Fuploads%2Fwallpaper%2Ffiles%2Fwor%2Fworldmap-wallpaper-53d499d581b96.jpg&refer=http%3A%2F%2Fimg.hqhdwalls.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1647515500&t=78026b09a82530bfed88ccd068cb7c98" alt="">
-        </div>
       </div>
-      <div class="network-content">
-        <div class="info">
-          <div class="info-title">Sunwalker Headquarter</div>
-          <div class="info-text">Email:info@sunwalkertech.com</div>
-          <div class="info-text">No.396,Kaiming Str,Haishu District, Ningbo,China</div>
+      <!-- <div class="network-content">
+        <div class="content-left">
+          <p>Sunwalker Headquarter:</p>
+          <p>Email: info@sunwalkertech.com</p>
+          <p>No.396, Kaiming Str., Haishu District, Ningbo, China</p>
         </div>
-        <div class="info">
-          <div class="info-title">Sunwalker EMEA</div>
-          <div class="info-text">Sales Director: Paul Su</div>
-          <div class="info-text">Tel:+8613263181798(WhatsApp/WeChat)</div>
-          <div class="info-text">Email:paul@sunwalkertech.com</div>
+        <div class="content-right">
+          <img src="" alt="">
         </div>
-        <div class="info">
-          <div class="info-title">Sunwalker Asiaand AU</div>
-          <div class="info-text">Sales Director: Steve</div>
-          <div class="info-text">Tel:+8613955390159</div>
-          <div class="info-text">Email:steve@sunwalkertech.com</div>
-        </div>
-        <div class="info">
-          <div class="info-title">Sunwalker NA</div>
-          <div class="info-text">Sales Director: Simon Cheung</div>
-          <div class="info-text">Tel:+86178621251999</div>
-          <div class="info-text">Email:simon@sunwalkertech.com</div>
-        </div>
-        <div class="info">
-          <div class="info-title">Sunwalker LATAM</div>
-          <div class="info-text">Sales Director: Acker Elon</div>
-          <div class="info-text">Tel:+8619817028832</div>
-          <div class="info-text">Email:acker@sunwalkertech.com</div>
-        </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -329,5 +305,15 @@ export default {
     font-weight: 500;
     color: #000;
   }
+  .el-select {
+    width: 100%;
+  }
+  .network-content {
+    display: flex;
+  }
+  .content-left {
+    margin-left: 20%;
+  }
+  
 </style>
 
