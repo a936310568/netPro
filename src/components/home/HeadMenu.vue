@@ -91,9 +91,7 @@ export default {
       this.$router.push('/')
     },
     routerPush(routerName) {
-      if(routerName === 'Contact') {
-        this.isShowChild = false
-      }
+      if(routerName === 'Products') return
       const url = `/${routerName}`
       this.$router.push({path : url})
     },

@@ -163,16 +163,60 @@
       <div class="network-header">
         <p class="header-title">Global NetWork</p>
       </div>
-      <!-- <div class="network-content">
+      <div class="network-content">
         <div class="content-left">
-          <p>Sunwalker Headquarter:</p>
+          <p class="decTitle">Sunwalker Headquarter:</p>
           <p>Email: info@sunwalkertech.com</p>
           <p>No.396, Kaiming Str., Haishu District, Ningbo, China</p>
         </div>
         <div class="content-right">
-          <img src="" alt="">
+          <img class="decImg" src="../../assets/Sunwalker Headquarter.jpg" alt="">
         </div>
-      </div> -->
+      </div>
+      <div class="network-content mt30">
+        <div class="content-left">
+          <p class="decTitle">Sunwalker  Europe:</p>
+          <p>Sales Director: Paul Su</p>
+          <p>Tel：+86 132 6318 1798 （WhatsApp / WeChat）</p>
+          <p>Email:paul@sunwalkertech.com</p>
+        </div>
+        <div class="content-right mt30">
+          <img class="decImg" src="../../assets/Sunwalker  Europe.jpg" alt="">
+        </div>
+      </div>
+      <div class="network-content mt30">
+        <div class="content-left">
+          <p class="decTitle">Sunwalker Headquarter:</p>
+          <p>Sales Director: Acker Elon</p>
+          <p>Tel:+86 198 1702 8832（WhatsApp / WeChat）a</p>
+          <p>Email:acker@sunwalkertech.com</p>
+        </div>
+        <div class="content-right">
+          <img class="decImg" src="../../assets/Sunwalker Latin America.jpg" alt="">
+        </div>
+      </div>
+      <div class="network-content mt30">
+        <div class="content-left">
+          <p class="decTitle">Sunwalker Africa:</p>
+          <p>Sales Director: Simon Cheung</p>
+          <p>Tel:+86 178 6212 5199（WhatsApp / WeChat）</p>
+          <p>Email:simon@sunwalkertech.com</p>
+        </div>
+        <div class="content-right">
+          <img class="decImg" src="../../assets/Sunwalker Africa.jpg" alt="">
+        </div>
+      </div>
+      <div class="network-content mt30">
+        <div class="content-left">
+          <p class="decTitle">Sunwalker  Asia and Australia:</p>
+          <p>Sales Director: Steve</p>
+          <p>Tel:+86 139 5539 0159  （WhatsApp / WeChat）</p>
+          <p>Email: steve@sunwalkertech.com</p>
+        </div>
+        <div class="content-right mt30">
+          <img class="decImg" src="../../assets/Sunwalker  Asia and Australia.jpg" alt="">
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -310,9 +354,24 @@ export default {
   }
   .network-content {
     display: flex;
+    width: 60;
+    padding: 0 20%;
+    font-size: 18px;
+    justify-content: space-between;
   }
-  .content-left {
-    margin-left: 20%;
+  .mt30 {
+    margin-top: 30px;
+  }
+  .decTitle {
+    color: #000;
+    font-weight: 600;
+  }
+  .content-right {
+    width: 28%;
+  }
+  .decImg {
+    width: 100%;
+    height: auto;
   }
   
 </style>
