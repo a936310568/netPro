@@ -2,7 +2,7 @@
   <div class="contain">
     <div class="module_one">
       <div class="pikBox">
-        <img class="img" src="../../assets/2.海外仓网页第一部分图片.png" alt="">
+        <img class="img" src="http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220313/474746a96225402c8696d0b8bc48d02e.jpg" alt="">
       </div>
       <!-- 介绍部分 -->
       <div class="content">
@@ -36,7 +36,7 @@
     </div>
     <div class="module_two">
       <div class="pikBox">
-        <img class="img" src="../../assets/2.海外仓网页第二部分图片.png" alt="">
+        <img class="img" src="http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220313/6920adff08424e48a560552ea368f49a.jpg" alt="">
       </div>
       <!-- 介绍部分 -->
       <div class="content">

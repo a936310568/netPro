@@ -2,7 +2,7 @@
   <div class="contain">
     <div class="requst">
       <div class="requst-header">
-        <img class="img" src="../../assets/4.Contact us页面第一部分图片.png" alt="">
+        <img class="img" src="http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220313/9e818d741f4e4e16b27654929340f6d4.jpg" alt="">
       </div>
       <div class="request-title">
         <p class="title-text flexCC">
@@ -170,7 +170,7 @@
           <p>No.396, Kaiming Str., Haishu District, Ningbo, China</p>
         </div>
         <div class="content-right">
-          <img class="decImg" src="../../assets/Sunwalker Headquarter.jpg" alt="">
+          <img class="decImg" src="http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220313/deebf4eb315e4552a8f4e35b69052089.jpg" alt="">
         </div>
       </div>
       <div class="network-content mt30">
@@ -181,7 +181,7 @@
           <p>Email:paul@sunwalkertech.com</p>
         </div>
         <div class="content-right mt30">
-          <img class="decImg" src="../../assets/Sunwalker  Europe.jpg" alt="">
+          <img class="decImg" src="http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220313/a5326039ef1344c99e20007e6b36f056.jpg" alt="">
         </div>
       </div>
       <div class="network-content mt30">
@@ -192,7 +192,7 @@
           <p>Email:acker@sunwalkertech.com</p>
         </div>
         <div class="content-right">
-          <img class="decImg" src="../../assets/Sunwalker Latin America.jpg" alt="">
+          <img class="decImg" src="http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220313/948ce12412094978adb71ccee4aa05fe.jpg" alt="">
         </div>
       </div>
       <div class="network-content mt30">
@@ -203,7 +203,7 @@
           <p>Email:simon@sunwalkertech.com</p>
         </div>
         <div class="content-right">
-          <img class="decImg" src="../../assets/Sunwalker Africa.jpg" alt="">
+          <img class="decImg" src="http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220313/a4a1e520dd2249aaa0e7f1faeaad64fb.jpg" alt="">
         </div>
       </div>
       <div class="network-content mt30">
@@ -214,7 +214,7 @@
           <p>Email: steve@sunwalkertech.com</p>
         </div>
         <div class="content-right mt30">
-          <img class="decImg" src="../../assets/Sunwalker  Asia and Australia.jpg" alt="">
+          <img class="decImg" src="http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220313/d3b52225ca864f4197e2d7f979e1a366.jpg" alt="">
         </div>
       </div>
     </div>

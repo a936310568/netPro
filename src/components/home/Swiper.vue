@@ -27,15 +27,15 @@ export default {
         },
         {
           id: '2',
-          url: 'http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220305/d7b9d41cbb454b948a5295728ac02dd9.jpg'
+          url: 'http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220313/db891f5bb3e84b868d29521e92e2bac7.jpg'
         },
         {
           id: '3',
-          url: 'http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220305/7c291a700ead4ebcb1f843e36de73dd6.jpg'
+          url: 'http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220313/f1aa7ef678c14ed3875962c68e43cea1.jpg'
         },
         {
           id: '4',
-          url: 'http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220305/46a998a6721d40ba89aadddbf9aebc45.jpg'
+          url: 'http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220313/cabd9ce774224696898b9dd71656524c.jpg'
         }
       ],
       isChange: false

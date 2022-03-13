@@ -2,7 +2,7 @@
   <div class="contain">
     <div class="module_one">
       <div class="pikBox">
-        <img class="img" src="../../assets/Company Profile.png" alt="">
+        <img class="img" src="http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220313/e329949cb2de4c2a85549fd2ba0f25a0.jpg" alt="">
       </div>
       <div class="content">
         <div class="content-title">Sunwalker Overview:</div>
@@ -11,9 +11,9 @@
         <p class="content-text">Sunwalker has two warehouses in the Netherlands (Doesburg and Almere). Sunwalker has shipped about 200,000+pcs solar panels and 1,100+units solar kits, primarily into the residential and commercial markets in Africa, the Middle East, Latam, and Europe.</p>
       </div>
       <div class="pikBox">
-        <img class="img" src="../../assets/数字跳动 原图.png" alt="">
+        <img class="img" src="http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220313/a096d1eda4fc4249a62dbf51acd9fe62.jpg" alt="">
         <div class="qutNumbox">
-          <div 
+          <div
             class="qutNum"
             v-waypoint="{
               active: true,
