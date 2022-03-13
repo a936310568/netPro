@@ -51,8 +51,8 @@ export default {
         },
         {
           id: '3',
-          menuName: 'Media',
-          routerPath: 'Media',
+          menuName: 'About Us',
+          routerPath: 'About',
         },
         {
           id: '4',
