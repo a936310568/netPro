@@ -80,20 +80,27 @@
       <div class="productBox">
         <div class="product">
           <div class="product-pic">
-            <img class="proPic" src="../../assets/SOFAR 8.8KTL-X.jpg" alt="">
-            <div class="proText">SOFAR 8.8KTL-X</div>
+            <div class="images" v-viewer @click="show()">
+              <img class="proPic" src="../../assets/SOFAR 8.8KTL-X.jpg" alt="">
+            </div>
+            <div class="proText" @click="show()">SOFAR 8.8KTL-X</div>
+            <el-button @click="download()" type="primary" plain class=" btn mt20">DowmLoad</el-button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-pic" >
+            <div class="images" v-viewer @click="show()">
+              <img class="proPic" src="../../assets/SOFAR 11KTL-X.jpg" alt="">
+            </div>
+            <div class="proText" @click="show()">SOFAR 11KTL-X</div>
           </div>
         </div>
         <div class="product">
           <div class="product-pic">
-            <img class="proPic" src="../../assets/SOFAR 11KTL-X.jpg" alt="">
-            <div class="proText">SOFAR 11KTL-X</div>
-          </div>
-        </div>
-        <div class="product">
-          <div class="product-pic">
-            <img class="proPic" src="../../assets/SOFAR 12KTL-X.jpg" alt="">
-            <div class="proText">SOFAR 12KTL-X</div>
+            <div class="images" v-viewer @click="show()">
+              <img class="proPic" src="../../assets/SOFAR 12KTL-X.jpg" alt="">
+            </div>
+            <div @click="show()" class="proText">SOFAR 12KTL-X</div>
           </div>
         </div>
       </div>
@@ -113,9 +120,38 @@
 </template>
 
 <script>
+import { api as viewerApi } from "v-viewer"
 
 export default {
   name: 'Global',
+  methods: {
+    show() {
+      let src = 'http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220318/1fe089747dcc473abe10658a4fcd3993.jpg'
+      viewerApi({
+        images: [src]
+      })
+    },
+    download() {
+      let base64Img = 'http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220318/1fe089747dcc473abe10658a4fcd3993.jpg'
+      let image = new Image();
+      // 解决跨域 Canvas 污染问题
+      image.setAttribute("crossOrigin", "anonymous");
+      image.onload = function() {
+        let canvas = document.createElement("canvas");
+        canvas.width = image.width;
+        canvas.height = image.height;
+        let context = canvas.getContext("2d");
+        context.drawImage(image, 0, 0, image.width, image.height);
+        let url = canvas.toDataURL("image/png"); //得到图片的base64编码数据
+        let a = document.createElement("a"); // 生成一个a元素
+        let event = new MouseEvent("click"); // 创建一个单击事件
+        a.download = 'product' || "photo"; // 设置图片名称
+        a.href = url; // 将生成的URL设置为a.href属性
+        a.dispatchEvent(event); // 触发a的单击事件
+      };
+      image.src = base64Img;
+    }
+  }
 }
 </script>
 
@@ -146,6 +182,9 @@ export default {
   .ml20 {
     margin-left: 20px;
   }
+  .mt20 {
+    margin-top: 20px;
+  }
   .qustion-text {
     font-weight: 500;
     font-size: 18px;
@@ -164,6 +203,10 @@ export default {
     height: 180;
     display: flex;
     justify-content: flex-end;
+  }
+  .btn {
+    height: 30px;
+    line-height: 0;
   }
   .Solar-text {
     font-weight: 500;
@@ -190,6 +233,7 @@ export default {
   .product-pic {
     width: 70%;
     text-align: center;
+    cursor: pointer;
   }
   .proPic {
     width: 100%;

@@ -3,7 +3,7 @@
       id="swiperBox"
       :autoplay='true' 
       :interval='5000'
-      height="65vh"
+      height="calc(100vh - 75px)"
     >
     <el-carousel-item v-for ="(item) in picList" :key="item.id">
       <img class="img" :src="item.url">

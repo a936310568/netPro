@@ -19,10 +19,10 @@
       </el-col>
       <el-col :span="6">
         <div class="iconlist">
-          <a href="https://www.linkedin.com/company/ningbo-sunwalker-new-energy-technologies-co-ltd/"><img class="icon" src="../../assets/领英 小图标.jpg" alt="" :key="index"></a>
-          <a href="https://www.facebook.com/SunwalkerNewEnergy/"><img class="icon2" src="../../assets/facebook 小图标.jpg" alt="" :key="index"></a>
-          <a href="https://www.instagram.com/sunwalkernewenergyL/"><img class="icon2" src="../../assets/Ins 小图标.jpg" alt="" :key="index"></a>
-          <a href="https://www.twitter.com/SunwalkerNE/"><img class="icon2" src="../../assets/Twitter 小图标.jpg" alt="" :key="index"></a>
+          <a href="https://www.linkedin.com/company/ningbo-sunwalker-new-energy-technologies-co-ltd/"><img class="icon" src="../../assets/领英 小图标.jpg" alt="" ></a>
+          <a href="https://www.facebook.com/SunwalkerNewEnergy/"><img class="icon2" src="../../assets/facebook 小图标.jpg" alt="" ></a>
+          <a href="https://www.instagram.com/sunwalkernewenergyL/"><img class="icon2" src="../../assets/Ins 小图标.jpg" alt="" ></a>
+          <a href="https://www.twitter.com/SunwalkerNE/"><img class="icon2" src="../../assets/Twitter 小图标.jpg" alt="" ></a>
         </div>
       </el-col>
     </el-row>
@@ -65,7 +65,6 @@ export default {
   },
   methods: {
     showChild(menuName, index) {
-      console.log('item',index)
       this.checkItem(index);
       this.menuList.forEach((item) => {
         if(item.menuName === menuName) {
@@ -111,7 +110,8 @@ export default {
     display: flex;
     align-items: center;
     position: fixed;
-    z-index: 9999;
+    z-index: 10;
+    border-bottom: #f4f5f7 2px solid;
   }
   .wrap {
     width: 100%;

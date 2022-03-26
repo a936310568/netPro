@@ -73,7 +73,7 @@
               <div class="input-wrap">
                 <div class="input">
                   <el-input
-                    v-model="email"
+                    v-model="phone"
                     clearable>
                   </el-input>
                 </div>
@@ -85,13 +85,13 @@
           <div class="input-item flexEnd">
             <div class="item">
               <div class="item-title">
-                <span class="text">Job Title</span>
+                <span class="text">Country</span>
                 <span class="must">*</span>
               </div>
               <div class="input-wrap">
                 <div class="input">
                   <el-input
-                    v-model="job"
+                    v-model="country"
                     clearable>
                   </el-input>
                 </div>
@@ -115,47 +115,8 @@
             </div>
           </div>
         </div>
-        <div class="inputBox">
-          <div class="input-item flexEnd">
-            <div class="item">
-              <div class="item-title">
-                <span class="text">Job Title</span>
-                <span class="must">*</span>
-              </div>
-              <div class="input-wrap">
-                <div class="input">
-                  <el-select v-model="value">
-                    <el-option
-                      v-for="item in options"
-                      :key="item.value"
-                      :label="item.label"
-                      :value="item.value">
-                    </el-option>
-                  </el-select>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="input-item ml">
-            <div class="item">
-              <div class="item-title">
-                <span class="text">Company Name</span>
-                <span class="must">*</span>
-              </div>
-              <div class="input-wrap">
-                <div class="input">
-                  <el-select v-model="value">
-                    <el-option
-                      v-for="item in options"
-                      :key="item.value"
-                      :label="item.label"
-                      :value="item.value">
-                    </el-option>
-                  </el-select>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="send">
+          <el-button @click="send()">commit</el-button>
         </div>
       </div>
     </div>
@@ -188,7 +149,7 @@
         <div class="content-left">
           <p class="decTitle">Sunwalker Headquarter:</p>
           <p>Sales Director: Acker Elon</p>
-          <p>Tel:+86 198 1702 8832（WhatsApp / WeChat）a</p>
+          <p>Tel:+86 198 1702 8832（WhatsApp / WeChat）</p>
           <p>Email:acker@sunwalkertech.com</p>
         </div>
         <div class="content-right">
@@ -227,28 +188,41 @@ export default {
   name: 'Global',
   data() {
     return {
-      input: '',
-      options: [{
-        value: '选项1',
-        label: '黄金糕'
-      }, {
-        value: '选项2',
-        label: '双皮奶'
-      }, {
-        value: '选项3',
-        label: '蚵仔煎'
-      }, {
-        value: '选项4',
-        label: '龙须面'
-      }, {
-        value: '选项5',
-        label: '北京烤鸭'
-      }],
-      value: ''
+      firstName: '',
+      lastName: '',
+      email: '',
+      phone: '',
+      country: '',
+      company: ''
     }
   },
-  mounted() {
-    window.location.href="#netWork"
+  methods: {
+    send() {
+      const { firstName, lastName, email, phone, country, company } = this
+      if(!firstName || !lastName || !email || !phone || !country || !company) {
+        this.$message({
+          message: 'Please complete all the information',
+          type: 'warning'
+        });
+      }else {
+        const obj = {
+          first_name: firstName,
+          last_name: lastName,
+          email_addr: email,
+          phone: phone,
+          company: company,
+          country: country,
+        }
+        this.$axios({
+          url: 'http://0.0.0.0:3001/email',
+          method:'post',
+          data:JSON.stringify(obj),
+          headers:{
+            'Content-Type': 'application/json'
+          }
+        })
+      }
+    }
   }
 }
 </script>
@@ -373,6 +347,11 @@ export default {
     width: 100%;
     height: auto;
   }
-  
+  .send {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
 </style>
 
