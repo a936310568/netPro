@@ -214,7 +214,7 @@ export default {
           country: country,
         }
         this.$axios({
-          url: 'http://0.0.0.0:3001/email',
+          url: 'http://120.55.86.134:3001/email',
           method:'post',
           data:JSON.stringify(obj),
           headers:{
