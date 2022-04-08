@@ -3,6 +3,10 @@ import VueRouter from 'vue-router'
 import Home from '../views/page/Home.vue'
 
 Vue.use(VueRouter)
+const originalPush = VueRouter.prototype.push
+  VueRouter.prototype.push = function push(location) {
+  return originalPush.call(this, location).catch(err => err)
+}
 
 const routes = [
   {
@@ -11,9 +15,9 @@ const routes = [
     component: Home
   },
   {
-    path: '/Products',
-    name: 'Products',
-    component: () => import(/* webpackChunkName: "about" */ '../views/page/Products.vue')
+    path: '/Down',
+    name: 'Down',
+    component: () => import(/* webpackChunkName: "about" */ '../views/page/Down.vue')
   },
   {
     path: '/Global',
@@ -29,6 +33,11 @@ const routes = [
     path: '/About',
     name: 'About',
     component: () => import('../views/page/About.vue')
+  },
+  {
+    path: '/Detail',
+    name: 'Detail',
+    component: () => import('../views/page/ProductDetail.vue')
   }
 ]
 

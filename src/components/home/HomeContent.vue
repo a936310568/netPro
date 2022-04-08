@@ -1,7 +1,7 @@
 <template>
   <div class="contain">
     <div class="pikBox">
-      <img class="img" src="http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220313/474746a96225402c8696d0b8bc48d02e.jpg" alt="">
+      <img class="img" src="http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220406/a357e8b319ba467282cf4d00c9a7c1c1.jpg" alt="">
     </div>
     <!-- 介绍部分 -->
     <div class="content">

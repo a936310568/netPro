@@ -2,7 +2,7 @@
   <div class="contain">
     <div class="module_one">
       <div class="pikBox">
-        <img class="img" src="http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220313/474746a96225402c8696d0b8bc48d02e.jpg" alt="">
+        <img class="img" src="http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220406/a357e8b319ba467282cf4d00c9a7c1c1.jpg" alt="">
       </div>
       <!-- 介绍部分 -->
       <div class="content">
@@ -36,7 +36,7 @@
     </div>
     <div class="module_two">
       <div class="pikBox">
-        <img class="img" src="http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220313/6920adff08424e48a560552ea368f49a.jpg" alt="">
+        <img class="img" src="http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220406/6a6aeb5c65cb42c29b813dbbf3d04307.jpg" alt="">
       </div>
       <!-- 介绍部分 -->
       <div class="content">
@@ -93,6 +93,7 @@
               <img class="proPic" src="../../assets/SOFAR 11KTL-X.jpg" alt="">
             </div>
             <div class="proText" @click="show()">SOFAR 11KTL-X</div>
+             <el-button @click="download()" type="primary" plain class=" btn mt20">DowmLoad</el-button>
           </div>
         </div>
         <div class="product">
@@ -101,6 +102,7 @@
               <img class="proPic" src="../../assets/SOFAR 12KTL-X.jpg" alt="">
             </div>
             <div @click="show()" class="proText">SOFAR 12KTL-X</div>
+             <el-button @click="download()" type="primary" plain class=" btn mt20">DowmLoad</el-button>
           </div>
         </div>
       </div>
@@ -204,10 +206,6 @@ export default {
     display: flex;
     justify-content: flex-end;
   }
-  .btn {
-    height: 30px;
-    line-height: 0;
-  }
   .Solar-text {
     font-weight: 500;
     font-size: 18px;
@@ -249,6 +247,18 @@ export default {
   }
   .module_two {
     margin-top: 30px;
+  }
+  .btn {
+    width: 180px;
+    background: #39a9ae;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
   }
 </style>
 

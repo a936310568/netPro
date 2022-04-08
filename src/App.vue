@@ -1,21 +1,20 @@
 <template>
   <div id="app">
-    <!-- <div id="nav"> -->
-      <!-- <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> -->
-    <!-- </div> -->
     <HeadMenu />
-    <router-view id="view"/>
+    <router-view id="view" :key="$route.name + ($route.query.name || '')"/>
+    <BottomMenu />
   </div>
 </template>
 <script>
 // @ is an alias to /src
 
 import HeadMenu from './components/home/HeadMenu.vue'
+import BottomMenu from './components/home/bottomMenu.vue'
 export default {
   name: 'app',
   components: {
-    HeadMenu
+    HeadMenu,
+    BottomMenu
   }
 }
 </script>
@@ -42,5 +41,14 @@ body {
 
 #view {
   padding-top: 76px;
+}
+div {
+  font-family:"Times New Roman",Georgia,Serif;
+}
+p {
+  font-family:"Times New Roman",Georgia,Serif;
+}
+span {
+  font-family:"Times New Roman",Georgia,Serif;
 }
 </style>

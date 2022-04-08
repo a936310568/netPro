@@ -1,4 +1,5 @@
 <template>
+<div>
   <div class="nav">
     <el-row class="wrap">
       <el-col :span="4">
@@ -11,7 +12,7 @@
           <div 
             v-bind:class="['navItem', currIndex === i ? 'bottomLine' : '']"
             @click="routerPush(item.routerPath)" 
-            @mouseover="checkItem(i)"
+            @mouseover="checkItem(item.menuName,i)"
             @mouseleave="clearSelect()"
             v-if="!item.hasChild" :key="item.id"
           >{{item.menuName}}</div>
@@ -26,11 +27,32 @@
         </div>
       </el-col>
     </el-row>
+    <div class="childMenu" v-show="isShowChild" @mouseleave="unshowChild()">
+      <template v-for ="(item, i) in childMenuList">
+          <div class="childMenuItem" :key="i" >
+            <p class="title">{{item.title}}</p>
+            <template v-for ="(el, i) in item.child">
+              <p 
+                @click="goDetail(el.text)"
+                v-bind:class="['text', currVal === el.text ? 'activeText' : '']"
+                :key="i"
+                @mouseover="childTextSelect(el.text)"
+                @mouseleave="clearTextSelect()"
+              >{{el.text}}</p>
+            </template>
+          </div>
+        </template>
+    </div>
+    <div>
+      
+    </div>
   </div>
+</div>
 </template>
 
 
 <script>
+import Bus from '../../utils/bus';
 
 export default {
   
@@ -60,27 +82,49 @@ export default {
           routerPath: 'Contact',
         }
       ],
-      currIndex: null
+      childMenuList: [
+        {
+          id: '1',
+          title: 'PERC Mono',
+          child: [
+            { text: 'SW320-330W-M' },
+            { text: 'SW380-400W-M' }
+          ]
+        },
+        {
+          id: '2',
+          title: 'PERC Poly',
+          child: [
+            { text: 'SW250-270W-P' },
+            { text: 'SW330-350W-P' }
+          ]
+        },
+        {
+          id: '3',
+          title: 'PERC Half-cell',
+          child: [
+            { text: 'SW420-450W-HC' },
+            { text: 'SW535-550W-HC' }
+          ]
+        },
+        {
+          id: '4',
+          title: 'PV Accessories',
+          child: [
+            { text: 'Folding Solar Panels' }
+          ]
+        },
+      ],
+      currIndex: null,
+      currVal: ''
     };
   },
   methods: {
-    showChild(menuName, index) {
-      this.checkItem(index);
-      this.menuList.forEach((item) => {
-        if(item.menuName === menuName) {
-          item.showChild = true
-        }
-      })
-    },
     clearSelect() {
       this.currIndex = null
     },
-    unshowChild(menuName) {
-      this.menuList.forEach((item) => {
-        if(item.menuName === menuName) {
-          item.showChild = false
-        }
-      })
+    unshowChild() {
+      this.isShowChild = false
     },
     handleClickChild(child) {
       console.log(child)
@@ -94,9 +138,24 @@ export default {
       const url = `/${routerName}`
       this.$router.push({path : url})
     },
-    checkItem(index) {
-      console.log('index', index)
+    checkItem(menuName, index) {
+      if(menuName === 'Products') {
+        this.isShowChild = true
+      } else {
+        this.isShowChild = false
+      }
       this.currIndex = index
+    },
+    goDetail(name) {
+      this.isShowChild =false
+      Bus.$emit('getName', name);   
+      this.$router.push({ path : '/Detail', query: { name } } )
+    },
+    childTextSelect(val) {
+      this.currVal = val
+    },
+    clearTextSelect() {
+      this.currVal = ''
     }
   }
 }
@@ -108,15 +167,16 @@ export default {
     background-color: #fff;
     width: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     position: fixed;
     z-index: 10;
-    border-bottom: #f4f5f7 2px solid;
   }
   .wrap {
     width: 100%;
     display: flex;
     align-items: center;
+    border-bottom: #f4f5f7 2px solid;
     /* position: relative; */
   }
   .navItemBox {
@@ -162,8 +222,6 @@ export default {
     display: flex;
     padding-left: 20px;
   }
-  .iconlist {
-  }
   .icon {
     width: 20px;
     height: 20px;
@@ -173,5 +231,27 @@ export default {
     width: 25px;
     height: 20px;
     margin-left: 30px;
+  }
+  .title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+  }
+  .text {
+    cursor: pointer;
+  }
+  .childMenu {
+    width: 100%;
+    padding: 0px 80px 30px;
+    display: flex;
+    border-bottom: #f4f5f7 2px solid;
+  }
+  .childMenuItem {
+    width: 20%;
+  }
+  .activeText {
+    color: #4395ff;
+    font-weight: 500;
   }
 </style>

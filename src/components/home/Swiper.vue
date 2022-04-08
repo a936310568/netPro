@@ -23,19 +23,19 @@ export default {
       picList: [
         {
           id: '1',
-          url: 'http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220305/b4a1676810c744b99d4dd5e38f1b7cf1.jpg'
+          url: 'http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220402/45eb5dd77f3c4627ae3c2b37a3a5292f.jpg'
         },
         {
           id: '2',
-          url: 'http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220313/db891f5bb3e84b868d29521e92e2bac7.jpg'
+          url: 'http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220402/d45cf2bda1a6474bb2f06424fbbdb0dc.jpg'
         },
         {
           id: '3',
-          url: 'http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220313/f1aa7ef678c14ed3875962c68e43cea1.jpg'
+          url: 'http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220402/3d61beaf0ffc41148edfa0ae7484ae7a.jpg'
         },
         {
           id: '4',
-          url: 'http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220313/cabd9ce774224696898b9dd71656524c.jpg'
+          url: 'http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220402/62c1ea83bdb944ef91b22b6cb083b902.jpg'
         }
       ],
       isChange: false
