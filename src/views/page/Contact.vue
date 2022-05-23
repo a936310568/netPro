@@ -2,7 +2,7 @@
   <div class="contain">
     <div class="requst">
       <div class="requst-header">
-        <img class="img" src="http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220406/e4b147f32b9946a5adcb07cb62bdd4d4.jpg" alt="">
+        <img class="img" src="../../assets/Contact.jpg" alt="">
       </div>
       <div class="request-title">
         <p class="title-text flexCC">
@@ -116,13 +116,13 @@
           </div>
         </div>
         <div class="send">
-          <div class="btn" @click="send()">submit</div>
+          <div class="btn" @click="send()">Submit</div>
         </div>
       </div>
     </div>
     <div id="network" class="netWork">
       <div class="network-header">
-        <p class="header-title">Global NetWork</p>
+        <p class="header-title">Global Network</p>
       </div>
       <div class="network-content">
         <div class="content-left">
@@ -131,7 +131,7 @@
           <p>No.396, Kaiming Str., Haishu District, Ningbo, China</p>
         </div>
         <div class="content-right">
-          <img class="decImg" src="http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220406/694d6e6c815049bcaa054d85ff62baa1.jpg" alt="">
+          <img class="decImg" src="../../assets/net2.jpg" alt="">
         </div>
       </div>
       <div class="network-content mt30">
@@ -142,18 +142,18 @@
           <p>Email:paul@sunwalkertech.com</p>
         </div>
         <div class="content-right mt30">
-          <img class="decImg" src="http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220406/04d767cc4dcc410a93bb6636f0ca005e.jpg" alt="">
+          <img class="decImg" src="../../assets/net3.jpg" alt="">
         </div>
       </div>
       <div class="network-content mt30">
         <div class="content-left">
-          <p class="decTitle">Sunwalker Headquarter:</p>
+          <p class="decTitle">Sunwalker Latin America:</p>
           <p>Sales Director: Acker Elon</p>
           <p>Tel:+86 198 1702 8832（WhatsApp / WeChat）</p>
           <p>Email:acker@sunwalkertech.com</p>
         </div>
         <div class="content-right">
-          <img class="decImg" src="http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220406/670d0186f67f4d53b3d85bb47347b7fb.jpg" alt="">
+          <img class="decImg" src="../../assets/net5.jpg" alt="">
         </div>
       </div>
       <div class="network-content mt30">
@@ -164,7 +164,7 @@
           <p>Email:simon@sunwalkertech.com</p>
         </div>
         <div class="content-right">
-          <img class="decImg" src="http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220406/28bc8e81142941538bf5b42d9e78efe4.jpg" alt="">
+          <img class="decImg" src="../../assets/net4.jpg" alt="">
         </div>
       </div>
       <div class="network-content mt30">
@@ -175,7 +175,7 @@
           <p>Email: steve@sunwalkertech.com</p>
         </div>
         <div class="content-right mt30">
-          <img class="decImg" src="http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220406/824c195f819f4ed1a6376acbce913eb4.jpg" alt="">
+          <img class="decImg" src="../../assets/net1.jpg" alt="">
         </div>
       </div>
     </div>

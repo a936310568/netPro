@@ -2,7 +2,7 @@
     <el-carousel
       id="swiperBox"
       :autoplay='true' 
-      :interval='5000'
+      :interval='4000'
       height="calc(100vh - 75px)"
     >
     <el-carousel-item v-for ="(item) in picList" :key="item.id">
@@ -23,19 +23,19 @@ export default {
       picList: [
         {
           id: '1',
-          url: 'http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220402/45eb5dd77f3c4627ae3c2b37a3a5292f.jpg'
+          url: require('../../assets/swiper1.jpg')
         },
         {
           id: '2',
-          url: 'http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220402/d45cf2bda1a6474bb2f06424fbbdb0dc.jpg'
+          url: require('../../assets/swiper2.jpg')
         },
         {
           id: '3',
-          url: 'http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220402/3d61beaf0ffc41148edfa0ae7484ae7a.jpg'
+          url: require('../../assets/swiper3.jpg')
         },
         {
           id: '4',
-          url: 'http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220402/62c1ea83bdb944ef91b22b6cb083b902.jpg'
+          url: require('../../assets/swiper4.jpg')
         }
       ],
       isChange: false

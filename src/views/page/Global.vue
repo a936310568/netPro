@@ -2,7 +2,7 @@
   <div class="contain">
     <div class="module_one">
       <div class="pikBox">
-        <img class="img" src="http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220406/a357e8b319ba467282cf4d00c9a7c1c1.jpg" alt="">
+        <img class="img" src="../../assets/Global-Supply-Chain.jpg" alt="">
       </div>
       <!-- 介绍部分 -->
       <div class="content">
@@ -10,6 +10,7 @@
           <p class="title">
             Overseas Warenouses Address.
           </p>
+          <div class="lineBox"></div>
           <p class="content-text">
             (1) Doesburg,Netherlands(Solar panels;Solar lights; Solar Inverter)
           </p>
@@ -22,6 +23,7 @@
           <p class="title">
             Why Sunwalker set up overseas warehouses?
           </p>
+          <div class="lineBox"></div>
           <p class="qustion-text">
             Faster delivery time solves the time required for complicated operation procedures in transportation, customs declaration, customs clearance, et. and helps customers get the goods faster and more effectively.
           </p>
@@ -36,43 +38,45 @@
     </div>
     <div class="module_two">
       <div class="pikBox">
-        <img class="img" src="http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220406/6a6aeb5c65cb42c29b813dbbf3d04307.jpg" alt="">
+        <img class="img" src="../../assets/Overseas-Stock.jpg" alt="">
       </div>
       <!-- 介绍部分 -->
-      <div class="content">
-        <div class="content-top">
-          <p class="title">
-            Why Choose SOFARSOLAR Inverters? (Solar Inverter in Overseas Warehouse)
-          </p>
-        </div>
+      <div class="content flex">
+        <div class="content-left">
+          <div class="content-top">
+            <div class="title">
+              Why Choose SOFARSOLAR Inverters? (Solar Inverter in Overseas Warehouse)
+            </div>
+          </div>
         <!--  -->
-        <div class="text-pic">
-          <div class="leftBox">
-            <div class="Solar-text">
-              (a) All SOFARSOLAR inverters have a built-in zero export function;
-            </div>
-            <div class="Solar-text">
-              (b) All SOFARSOLAR inverters have standard Wifi communication and allow remote operation;
-            </div>
-            <div class="Solar-text">
-              (c) All SOFARSOLAR inverters are capable of storing 25 years of data;
-            </div>
-            <div class="Solar-text">
-              (d) All SOFARSOLAR inverters are insured by US CHUBB Insurance Corporation Company;
-            </div>
-            <div class="Solar-text">
-              (e) All SOFARSOLAR inverters are fitted with extensive protection functions;
-            </div>
-            <div class="Solar-text">
-              (f) All SOFARSOLAR inverters operate safely in challenging weather conditions.
-            </div>
-            <div class="Solar-text">
-              (g) All SOFARSOLAR inverters can be found in PV Sol system;
+          <div class="text-pic">
+            <div class="leftBox">
+              <div class="Solar-text mt20">
+                (a) All SOFARSOLAR inverters have a built-in zero export function;
+              </div>
+              <div class="Solar-text">
+                (b) All SOFARSOLAR inverters have standard Wifi communication and allow remote operation;
+              </div>
+              <div class="Solar-text">
+                (c) All SOFARSOLAR inverters are capable of storing 25 years of data;
+              </div>
+              <div class="Solar-text">
+                (d) All SOFARSOLAR inverters are insured by US CHUBB Insurance Corporation Company;
+              </div>
+              <div class="Solar-text">
+                (e) All SOFARSOLAR inverters are fitted with extensive protection functions;
+              </div>
+              <div class="Solar-text">
+                (f) All SOFARSOLAR inverters operate safely in challenging weather conditions.
+              </div>
+              <div class="Solar-text">
+                (g) All SOFARSOLAR inverters can be found in PV Solar system;
+              </div>
             </div>
           </div>
-          <div class="rightBox">
-            <img class="pic" src="../../assets/卖点小图.jpg" alt="">
-          </div>
+        </div>
+        <div class="rightBox">
+          <img class="pic" src="../../assets/卖点小图.jpg" alt="">
         </div>
       </div>
     </div>
@@ -84,7 +88,7 @@
               <img class="proPic" src="../../assets/SOFAR 8.8KTL-X.jpg" alt="">
             </div>
             <div class="proText" @click="show()">SOFAR 8.8KTL-X</div>
-            <el-button @click="download()" type="primary" plain class=" btn mt20">DowmLoad</el-button>
+            <el-button @click="download()" type="primary" plain class=" btn mt20">Download</el-button>
           </div>
         </div>
         <div class="product">
@@ -93,7 +97,7 @@
               <img class="proPic" src="../../assets/SOFAR 11KTL-X.jpg" alt="">
             </div>
             <div class="proText" @click="show()">SOFAR 11KTL-X</div>
-             <el-button @click="download()" type="primary" plain class=" btn mt20">DowmLoad</el-button>
+             <el-button @click="download()" type="primary" plain class=" btn mt20">Download</el-button>
           </div>
         </div>
         <div class="product">
@@ -102,7 +106,7 @@
               <img class="proPic" src="../../assets/SOFAR 12KTL-X.jpg" alt="">
             </div>
             <div @click="show()" class="proText">SOFAR 12KTL-X</div>
-             <el-button @click="download()" type="primary" plain class=" btn mt20">DowmLoad</el-button>
+             <el-button @click="download()" type="primary" plain class=" btn mt20">Download</el-button>
           </div>
         </div>
       </div>
@@ -110,6 +114,7 @@
         <p class="title">
           Sofar Overview:
         </p>
+        <div class="lineBox"></div>
         <p class="qustion-text">
           SOFARSOLAR was established in 2013 in China. The company specializes in the R&D, production, and sales of a wide range of inverters, including grid-tied inverters (1kW-255kW) and hybrid inverters (3kW-20kW), energy storage systems and EV charging. With a firm, long-standing position in China's top 5 string inverter manufacturers.
         </p>
@@ -128,13 +133,13 @@ export default {
   name: 'Global',
   methods: {
     show() {
-      let src = 'http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220318/1fe089747dcc473abe10658a4fcd3993.jpg'
+      let src = require('../../assets/SOFARSOLAR 3.3-12kW data.jpg')
       viewerApi({
         images: [src]
       })
     },
     download() {
-      let base64Img = 'http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220318/1fe089747dcc473abe10658a4fcd3993.jpg'
+      let base64Img = require('../../assets/SOFARSOLAR 3.3-12kW data.jpg')
       let image = new Image();
       // 解决跨域 Canvas 污染问题
       image.setAttribute("crossOrigin", "anonymous");
@@ -171,12 +176,13 @@ export default {
     color: #000;
   }
   .content {
+    padding-top: 20px;
     margin-left: 20px;
   }
   .content-text {
-    font-weight: 600;
-    font-size: 20px;
-    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+    color: #545449;
   }
   .content-qustion {
     margin-top: 30px;
@@ -189,31 +195,36 @@ export default {
   }
   .qustion-text {
     font-weight: 500;
-    font-size: 18px;
-    color: #000;
+    font-size: 14px;
+    color: #545449;
   }
   .text-pic {
     width: 100%;
     display: flex;
   }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
   .leftBox {
-    width: 75%;
     height: 180;
+  }
+  .content-left {
+    width: 75%;
   }
   .rightBox {
     flex: 1;
-    height: 180;
     display: flex;
     justify-content: flex-end;
   }
   .Solar-text {
     font-weight: 500;
-    font-size: 18px;
-    color: #000;
+    font-size: 16px;
+    color: #545449;
     margin-top: 10px;
   }
   .pic {
-    width: 200px;
+    width: 240px;
     height: auto;
     margin-right: 30px;
   }
@@ -259,6 +270,17 @@ export default {
     font-size: 16px;
     font-weight: bold;
     margin-top: 20px;
+  }
+  .lineBox {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    border-top-color: #ffbc35;
+    border-top-width: 8px;
+    border-top-style: solid;
+    border-right: 6px solid rgba(0,0,0,0);
+    width: 52px;
+    height: 0;
+    box-sizing: border-box;
   }
 </style>
 

@@ -7,7 +7,7 @@
           <img class="img" src="../../assets/231646541950_.pic.jpg" alt="">
         </div>
       </el-col>
-      <el-col class="navItemBox" :span="12">
+      <el-col class="navItemBox" :span="18">
         <template v-for ="(item, i) in menuList">
           <div 
             v-bind:class="['navItem', currIndex === i ? 'bottomLine' : '']"
@@ -22,7 +22,7 @@
         <div class="iconlist">
           <a href="https://www.linkedin.com/company/ningbo-sunwalker-new-energy-technologies-co-ltd/"><img class="icon" src="../../assets/领英 小图标.jpg" alt="" ></a>
           <a href="https://www.facebook.com/SunwalkerNewEnergy/"><img class="icon2" src="../../assets/facebook 小图标.jpg" alt="" ></a>
-          <a href="https://www.instagram.com/sunwalkernewenergyL/"><img class="icon2" src="../../assets/Ins 小图标.jpg" alt="" ></a>
+          <a href="https://www.instagram.com/sunwalkernewenergy/"><img class="icon2" src="../../assets/Ins 小图标.jpg" alt="" ></a>
           <a href="https://www.twitter.com/SunwalkerNE/"><img class="icon2" src="../../assets/Twitter 小图标.jpg" alt="" ></a>
         </div>
       </el-col>
@@ -185,16 +185,16 @@ export default {
     height: 40px;
   }
   .navItem {
-    color: #008bd2;
+    color: rgb(0, 0, 0);
     margin-right: 50px;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
     text-decoration:rgba(1, 1, 1, 0);
     cursor: pointer;
   }
   .bottomLine {
-    /* border-bottom: 1px solid #fff; */
     color: black;
+    font-size: 18px;
   }
   .imgBox {
     width: 160px;

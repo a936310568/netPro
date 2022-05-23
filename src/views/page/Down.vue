@@ -3,7 +3,7 @@
     <div class="downBg">
       <img
         class="downImg"
-        src="http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220406/185de5db6e2c4bcdbb78a7e34567da41.jpg"
+        src="../../assets/Downloads.jpg"
         alt=""
       />
     </div>
@@ -107,7 +107,7 @@
         <div class="input">
           <el-input v-model="email" placeholder="email" clearable> </el-input>
         </div>
-        <div class="btn" @click="send()">submit</div>
+        <div class="btn" @click="send()">Submit</div>
       </div>
     </el-dialog>
   </div>

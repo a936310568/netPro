@@ -32,7 +32,7 @@
           clearable>
         </el-input>
       </div>
-      <div class="btn" @click="send()">submit</div>
+      <div class="btn" @click="send()">Submit</div>
     </div>
   </div>
 </template>
@@ -61,8 +61,8 @@ export default {
           id: '2',
           title: 'Global Supply Chain',
           child: [
-            { text: 'Doesburg,Netherlands' },
-            { text: 'Almere,Netherlands' }
+            { text: 'Doesburg, Netherlands' },
+            { text: 'Almere, Netherlands' }
           ]
         },
         {
@@ -178,13 +178,13 @@ export default {
     margin-top: 30px;
   }
   .childMenu {
-    width: 66%;
-    padding: 0px 40px 30px;
+    width: 75%;
+    padding: 0px 20px 30px 40px;
     display: flex;
   }
   .childMenuItem {
     /* width: 25%; */
-    margin-right: 8%;
+    margin-right: 7%;
   }
   .join {
     flex: 1;
@@ -194,13 +194,14 @@ export default {
     align-items: center;
   }
   .title {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
     color: #000;
     cursor: pointer;
   }
   .text {
     cursor: pointer;
+    color: #545454;
   }
   .input {
     margin-top: 20px;

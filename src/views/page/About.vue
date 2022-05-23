@@ -2,16 +2,17 @@
   <div class="contain">
     <div class="module_one">
       <div class="pikBox">
-        <img class="img" src="http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220406/85f482487f6d4eb49686e50a48905e51.jpg" alt="">
+        <img class="img" src="../../assets/Downloads.jpg" alt="">
       </div>
       <div class="content">
         <div class="content-title">Sunwalker Overview:</div>
+        <div class="lineBox"></div>
         <p class="content-text">Founded in 2012, Ningbo Sunwalker New Energy Technologies Co., Ltd. is specialized in solar power supply solutions. With 2 <br /> manufacturing bases and more than 6 branches around the world, the company’s business covers solar modules and home energy storage solutions.</p>
         <p class="content-text">Sunwalker has designed all its products from the ground up to handle the most extreme conditions and has been certified globally and obtained certificates including VDE, TUV, IEC, ISO, Inmetro, etc. Its core research team is made up of excellent R&D engineers who have rich experience in the solar power industry in power electronics, computer information engineering, semiconductor technology, automatic control, communications, etc. </p>
         <p class="content-text">Sunwalker has two warehouses in the Netherlands (Doesburg and Almere). Sunwalker has shipped about 200,000+pcs solar panels and 1,100+units solar kits, primarily into the residential and commercial markets in Africa, the Middle East, Latam, and Europe.</p>
       </div>
       <div class="pikBox">
-        <img class="img" src="http://img.saaspre.seatent.com/statics/621950557b5d3cbaee18c7351bbc929a/attachment/upload/image/20220406/112705db029b45c58aff4b8637898a9b.jpg" alt="">
+        <img class="img" src="../../assets/Company-profile.jpg" alt="">
         <div class="qutNumbox">
           <div
             class="qutNum"
@@ -158,9 +159,9 @@ export default {
     font-weight: 600;
   }
   .content-text {
-    font-size: 18px;
-    color: #000;
     font-weight: 500;
+    font-size: 16px;
+    color: #545449;
   }
   .qutNumbox {
     width: 100%;
@@ -184,6 +185,17 @@ export default {
     font-size: 12px;
     color: #999;
     font-weight: 500;
+  }
+  .lineBox {
+    margin-top: 18px;
+    margin-bottom: 10px;
+    border-top-color: #ffbc35;
+    border-top-width: 8px;
+    border-top-style: solid;
+    border-right: 6px solid rgba(0,0,0,0);
+    width: 52px;
+    height: 0;
+    box-sizing: border-box;
   }
 </style>
 
