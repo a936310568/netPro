@@ -1,9 +1,11 @@
 <template>
   <div class="contain">
     <div class="module_one">
-      <div class="pikBox">
+      <a style="width: 100%" href="#down">
+        <div class="pikBox">
         <img class="img" src="../../assets/Downloads.jpg" alt="">
       </div>
+      </a>
       <div class="content">
         <div class="content-title">Sunwalker Overview:</div>
         <div class="lineBox"></div>
@@ -96,7 +98,7 @@
           </div>
         </div>
       </div>
-      <div class="content">
+      <div class="content" id="down">
         <div class="content-title">Our Mission：</div>
         <p class="content-text">With a firm commitment to renewable energy and sustainable development, Sunwalker is dedicated to the R&D of affordable,durable and smart products,and making our technology accessible to all over the world！</p>
       </div>

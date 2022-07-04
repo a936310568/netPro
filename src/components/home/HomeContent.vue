@@ -7,14 +7,14 @@
     <div class="content">
       <div class="content-top">
         <p class="title">
-          Overseas Warenouses.
+          Overseas Warehouses.
         </p>
         <div class="lineBox"></div>
         <p class="content-text">
-          (1) Doesburg,Netherlands(Solar panels;Solar lights; Solar inverter)
+          (1) Doesburg, Netherlands(Solar panels; Solar lights; Solar inverter)
         </p>
         <p class="content-text">
-          (2) Almere,Netherlands(Solar panels;Solar inverter)
+          (2) Almere, Netherlands(Solar panels; Solar inverter)
         </p>
       </div>
       <!-- 问题部分 -->
@@ -30,7 +30,7 @@
           Lower shipping costs, shipments from overseas to customers, equivalent to domestic express, lower costs than shipping from China.
         </p>
         <p class="qustion-text">
-          Faster after-sales response. Ifthe machine fails, it can be replaced quickly, eliminating the cost, timeliness, and abandonment of the customer's domestic and foreign double customs clearance.
+          Faster after-sales response. If the machine fails, it can be replaced quickly, eliminating the cost, timeliness, and abandonment of the customer's domestic and foreign double customs clearance.
         </p>
       </div>
     </div>
